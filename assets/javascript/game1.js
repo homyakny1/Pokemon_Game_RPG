@@ -7,7 +7,9 @@ $(document).ready(function () {
         var squirtle = ["1", true, 180, 25, 25];
         var choosenPokemon = false;
         var opponent = false;
+        var pokemonSong = document.getElementById("pokemon-song");
     
+        pokemonSong.play()
         showPokemonsHP()
         choosePokemon()
         chooseEnemy()
