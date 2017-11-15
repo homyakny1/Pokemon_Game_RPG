@@ -26,9 +26,60 @@
     border-radius: 25px;
     margin-top:150px
 }
-#pikachu{
-    /* background-color: rgba(0, 185, 0, 0.658); */
+
+.pika-pika{
+    visibility: hidden;
+    font-size: 15px;
+    width: 120px;
+    background-color: rgba(0, 0, 104, 0.603);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
 }
-#charmander{
-    /* background-color: rgba(255, 0, 0, 0.596); */
+#pikachu-main:hover .pika-pika{
+    visibility: visible;
+}
+.bulba-bulba{
+    visibility: hidden;
+    font-size: 15px;
+    width: 120px;
+    background-color: rgba(0, 0, 104, 0.603);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+}
+#bulba-main:hover .bulba-bulba{
+    visibility: visible;
+}
+.char-char{
+    visibility: hidden;
+    font-size: 15px;
+    width: 120px;
+    background-color: rgba(0, 0, 104, 0.603);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+}
+#charmander-main:hover .char-char{
+    visibility: visible;
+}
+.squirtle-squirtle{
+    visibility: hidden;
+    font-size: 15px;
+    width: 120px;
+    background-color: rgba(0, 0, 104, 0.603);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+}
+#squirtle-main:hover .squirtle-squirtle{
+    visibility: visible;
 }

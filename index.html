@@ -30,66 +30,83 @@
                     <button class="center-block" style="display:none"><img src="assets/media/press_to_fight.png" alt="Press here to fight" style="height:103px"></button>
                 </div>
             </div>
-        <div class="row your-pokemon">
+
+<!-- Hidden pokemons -->
+
+        <div class="row">
+            
+<!-- Left column for pokemon that player chose -->
+
             <div class="col-md-3">
-                <div id="pikachu" style="display:none">
+                <div id="pikachu-left" style="display:none">
                     <h1 class="pokemon-name">Pikachu</h1>
                     <img class="center-block pokemons img-fluid" src="assets/media/pikachu.gif" alt="Pikachu">
                     <h3 class="pokemon-hp pikaHP"></h3>
                 </div>
-                <div id="bulba" style="display:none">
+                <div id="bulba-left" style="display:none">
                     <h1 class="pokemon-name">Bulbasaur</h1>
                     <img class="center-block pokemons img-fluid" src="assets/media/bulba.gif" alt="Bulbasaur">
                     <h3 class="pokemon-hp bulbaHP"></h3>
                 </div>
-                <div id="charmander" style="display:none">
+                <div id="charmander-left" style="display:none">
                     <h1 class="pokemon-name">Charmander</h1>
                     <img class="center-block pokemons img-fluid" src="assets/media/charmander.gif" alt="Charmander">
                     <h3 class="pokemon-hp charmanderHP"></h3>
                 </div>
-                <div id="squirtle" style="display:none">
+                <div id="squirtle-left" style="display:none">
                     <h1 class="pokemon-name">Squirtle</h1>
                     <img class="center-block pokemons img-fluid" src="assets/media/squirl.gif" alt="Squirtle">
                     <h3 class="pokemon-hp squirtleHP"></h3>
                 </div>
             </div>
+
+<!-- This is a fight button -->
+
             <div class="col-md-6">
                 <button class="center-block" id="fight-botton" style="display:none">
                     <img id="fightpng" src="assets/media/fight.png"> </button>
             </div>
-            <div class="col-md-3">
-                <div id="pikachu" style="display:none">
+
+<!-- Right column for pokemon's enemy -->
+
+            <div class="col-md-3" >
+                <div id="pikachu-right" style="display:none">
                     <h1 class="pokemon-name">Pikachu</h1>
                     <img class="center-block pokemons img-fluid" src="assets/media/pikachu.gif" alt="Pikachu">
                     <h3 class="pokemon-hp pikaHP"></h3>
                 </div>
-                <div id="bulba" style="display:none">
+                <div id="bulba-right" style="display:none">
                     <h1 class="pokemon-name">Bulbasaur</h1>
                     <img class="center-block pokemons img-fluid" src="assets/media/bulba.gif" alt="Bulbasaur">
                     <h3 class="pokemon-hp bulbaHP"></h3>
                 </div>
-                <div id="charmander" style="display:none">
+                <div id="charmander-right" style="display:none">
                     <h1 class="pokemon-name">Charmander</h1>
                     <img class="center-block pokemons img-fluid" src="assets/media/charmander.gif" alt="Charmander">
                     <h3 class="pokemon-hp charmanderHP"></h3>
                 </div>
-                <div id="squirtle" style="display:none">
+                <div id="squirtle-right" style="display:none">
                     <h1 class="pokemon-name">Squirtle</h1>
                     <img class="center-block pokemons img-fluid" src="assets/media/squirl.gif" alt="Squirtle">
                     <h3 class="pokemon-hp squirtleHP"></h3>
                 </div>
             </div>
         </div>
+
+<!-- Pokemons to choose from -->
+
         <div class="row pokemon-row">
             <div class="col-md-3">
                 <div id="pikachu-main">
+                    <span class="pika-pika">Pika-Pika! Pikachu...</span>
                     <h1 class="pokemon-name">Pikachu</h1>
                     <img class="center-block pokemons" src="assets/media/pikachu.gif" alt="Pikachu">
                     <h3 class="pokemon-hp pikaHP"></h3>
                 </div>
             </div>
-            <div class="col-md-3 img-fluid">
+            <div class="col-md-3">
                 <div id="bulba-main">
+                <span class="bulba-bulba">Bulbasaur! Bulba...</span>
                 <h1 class="pokemon-name">Bulbasaur</h1>
                 <img class="center-block pokemons" src="assets/media/bulba.gif" alt="Bulbasaur">
                 <h3 class="pokemon-hp bulbaHP"></h3>
@@ -98,6 +115,7 @@
         <div class="col-md-3">
             <div id="charmander-main">
                 <h1 class="pokemon-name">Charmander</h1>
+                <span class="char-char">Charmander... Char!</span>
                 <img class="center-block pokemons" src="assets/media/charmander.gif" alt="Charmander">
                 <h3 class="pokemon-hp charmanderHP"></h3>
             </div>
@@ -105,6 +123,7 @@
         <div class="col-md-3">
             <div id="squirtle-main">
                 <h1 class="pokemon-name">Squirtle</h1>
+                <span class="squirtle-squirtle">Squirtle! Squirtle!</span>
                 <img class="center-block pokemons" src="assets/media/squirl.gif" alt="Squirtle">
                 <h3 class="pokemon-hp squirtleHP"></h3>
             </div>
