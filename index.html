@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon RPG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet " type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <img class="img-responsive" id="background" src="assets/media/background.png" alt="Background">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="center-block img-responsive" id="pokemon_logo" src="assets/media/Pokemon_logo.png" alt="Pokemon" style="width:600px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="center-block img-responsive" id="choose_pokemon" src="assets/media/choose_pokemon.png" alt="Choose your Pokemon"
+                    style="height:103px">
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-12" id="underHead">
+                    <button class="center-block" style="display:none"><img src="assets/media/press_to_fight.png" alt="Press here to fight" style="height:103px"></button>
+                </div>
+            </div>
+        <div class="row your-pokemon">
+            <div class="col-md-3">
+                <div id="pikachu" style="display:none">
+                    <h1 class="pokemon-name">Pikachu</h1>
+                    <img class="center-block pokemons img-fluid" src="assets/media/pikachu.gif" alt="Pikachu">
+                    <h3 class="pokemon-hp pikaHP"></h3>
+                </div>
+                <div id="bulba" style="display:none">
+                    <h1 class="pokemon-name">Bulbasaur</h1>
+                    <img class="center-block pokemons img-fluid" src="assets/media/bulba.gif" alt="Bulbasaur">
+                    <h3 class="pokemon-hp bulbaHP"></h3>
+                </div>
+                <div id="charmander" style="display:none">
+                    <h1 class="pokemon-name">Charmander</h1>
+                    <img class="center-block pokemons img-fluid" src="assets/media/charmander.gif" alt="Charmander">
+                    <h3 class="pokemon-hp charmanderHP"></h3>
+                </div>
+                <div id="squirtle" style="display:none">
+                    <h1 class="pokemon-name">Squirtle</h1>
+                    <img class="center-block pokemons img-fluid" src="assets/media/squirl.gif" alt="Squirtle">
+                    <h3 class="pokemon-hp squirtleHP"></h3>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <button class="center-block" id="fight-botton" style="display:none">
+                    <img id="fightpng" src="assets/media/fight.png"> </button>
+            </div>
+            <div class="col-md-3">
+                <div id="pikachu" style="display:none">
+                    <h1 class="pokemon-name">Pikachu</h1>
+                    <img class="center-block pokemons img-fluid" src="assets/media/pikachu.gif" alt="Pikachu">
+                    <h3 class="pokemon-hp pikaHP"></h3>
+                </div>
+                <div id="bulba" style="display:none">
+                    <h1 class="pokemon-name">Bulbasaur</h1>
+                    <img class="center-block pokemons img-fluid" src="assets/media/bulba.gif" alt="Bulbasaur">
+                    <h3 class="pokemon-hp bulbaHP"></h3>
+                </div>
+                <div id="charmander" style="display:none">
+                    <h1 class="pokemon-name">Charmander</h1>
+                    <img class="center-block pokemons img-fluid" src="assets/media/charmander.gif" alt="Charmander">
+                    <h3 class="pokemon-hp charmanderHP"></h3>
+                </div>
+                <div id="squirtle" style="display:none">
+                    <h1 class="pokemon-name">Squirtle</h1>
+                    <img class="center-block pokemons img-fluid" src="assets/media/squirl.gif" alt="Squirtle">
+                    <h3 class="pokemon-hp squirtleHP"></h3>
+                </div>
+            </div>
+        </div>
+        <div class="row pokemon-row">
+            <div class="col-md-3">
+                <div id="pikachu-main">
+                    <h1 class="pokemon-name">Pikachu</h1>
+                    <img class="center-block pokemons" src="assets/media/pikachu.gif" alt="Pikachu">
+                    <h3 class="pokemon-hp pikaHP"></h3>
+                </div>
+            </div>
+            <div class="col-md-3 img-fluid">
+                <div id="bulba-main">
+                <h1 class="pokemon-name">Bulbasaur</h1>
+                <img class="center-block pokemons" src="assets/media/bulba.gif" alt="Bulbasaur">
+                <h3 class="pokemon-hp bulbaHP"></h3>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div id="charmander-main">
+                <h1 class="pokemon-name">Charmander</h1>
+                <img class="center-block pokemons" src="assets/media/charmander.gif" alt="Charmander">
+                <h3 class="pokemon-hp charmanderHP"></h3>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div id="squirtle-main">
+                <h1 class="pokemon-name">Squirtle</h1>
+                <img class="center-block pokemons" src="assets/media/squirl.gif" alt="Squirtle">
+                <h3 class="pokemon-hp squirtleHP"></h3>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script type="text/javascript" src="assets/javascript/game1.js"></script>
+</body>
+
+</html>

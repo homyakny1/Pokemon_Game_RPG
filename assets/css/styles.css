@@ -1,0 +1,34 @@
+
+#background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.pokemons{
+    height:210px;
+}
+
+.pokemon-name{
+    text-align: center;
+    margin-top: 120px;
+    font-family: 'Chelsea Market', cursive;
+    color: rgba(0, 0, 104, 0.603);
+}
+.pokemon-hp{
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgba(255, 255, 255, 0.603); 
+}
+
+#fight-botton{
+    border-radius: 25px;
+    margin-top:150px
+}
+#pikachu{
+    /* background-color: rgba(0, 185, 0, 0.658); */
+}
+#charmander{
+    /* background-color: rgba(255, 0, 0, 0.596); */
+}
