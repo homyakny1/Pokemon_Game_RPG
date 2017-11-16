@@ -21,6 +21,7 @@ $(document).ready(function () {
                 if (pikachu[0] === "1" && choosenPokemon === false) {
                     choosenPokemon = true;
                     pikachu[0] = "2";
+                    $("#pikachu-left").css("display","inline-block")
                     $("#pikachu-main").css("display", "none");
                     $("#choose_pokemon").attr("src", "assets/media/choose_enemy.png");
                 } 
@@ -31,6 +32,7 @@ $(document).ready(function () {
                 if (bulba[0] === "1" && choosenPokemon === false ) {
                     choosenPokemon = true;
                     bulba[0] = "2";
+                    $("#bulba-left").css("display","inline-block")
                     $("#bulba-main").css("display", "none");
                     $("#choose_pokemon").attr("src", "assets/media/choose_enemy.png");
                 } 
@@ -41,6 +43,7 @@ $(document).ready(function () {
                 if (charmander[0] === "1" && choosenPokemon === false ) {
                     choosenPokemon = true;
                     charmander[0] = "2";
+                    $("#charmander-left").css("display","inline-block")
                     $("#charmander-main").css("display", "none");
                     $("#choose_pokemon").attr("src", "assets/media/choose_enemy.png");
                 }  
@@ -51,6 +54,7 @@ $(document).ready(function () {
                 if (squirtle[0] === "1" && choosenPokemon === false) {
                     choosenPokemon=true;
                     squirtle[0] = "2";
+                    $("#squirtle-left").css("display","inline-block")
                     $("#squirtle-main").css("display", "none");
                     $("#choose_pokemon").attr("src", "assets/media/choose_enemy.png");
                 } 
@@ -71,11 +75,11 @@ $(document).ready(function () {
                     if(choosenPokemon === true && opponent === true){
                         $(".pokemon-row").css("display","none");
                         $("#fight-botton").css("display","block");
-                        if(pikachu[0] === "2"){
-                            console.log("test")
-                            $("#pikachu-left").css("display","inline-block")
-                        }
-                        else if(pikachu[0] === "3"){
+                        // if(pikachu[0] === "2"){
+                        //     console.log("test")
+                        //     $("#pikachu-left").css("display","inline-block")
+                        // }
+                        if(pikachu[0] === "3"){
                             $("#pikachu-right").css("display","inline-block")
                         }
                     };
@@ -90,11 +94,11 @@ $(document).ready(function () {
                     if(choosenPokemon === true && opponent === true){
                         $(".pokemon-row").css("display","none");
                         $("#fight-botton").css("display","block");
-                        if(bulba[0] === "2"){
-                            console.log("test")
-                            $("#bulba-left").css("display","inline-block")
-                        }
-                        else if(bulba[0] === "3"){
+                        // if(bulba[0] === "2"){
+                        //     console.log("test")
+                        //     $("#bulba-left").css("display","inline-block")
+                        // }
+                        if(bulba[0] === "3"){
                             $("#bulba-right").css("display","inline-block")
                         }
                     };
@@ -109,11 +113,11 @@ $(document).ready(function () {
                     if(choosenPokemon === true && opponent === true){
                         $(".pokemon-row").css("display","none");
                         $("#fight-botton").css("display","block");
-                        if(charmander[0] === "2"){
-                            console.log("test")
-                            $("#charmander-left").css("display","inline-block")
-                        }
-                        else if(charmander[0] === "3"){
+                        // if(charmander[0] === "2"){
+                        //     console.log("test")
+                        //     $("#charmander-left").css("display","inline-block")
+                        // }
+                        if(charmander[0] === "3"){
                             $("#charmander-right").css("display","inline-block")
                         }
                     };
@@ -128,11 +132,11 @@ $(document).ready(function () {
                     if(choosenPokemon === true && opponent === true){
                         $(".pokemon-row").css("display","none");
                         $("#fight-botton").css("display","block");
-                        if(squirtle[0] === "2"){
-                            console.log("test")
-                            $("#squirtle-left").css("display","inline-block")
-                        }
-                        else if(squirtle[0] === "3"){
+                        // if(squirtle[0] === "2"){
+                        //     console.log("test")
+                        //     $("#squirtle-left").css("display","inline-block")
+                        // }
+                        if(squirtle[0] === "3"){
                             $("#squirtle-right").css("display","inline-block")
                         }
                     };
