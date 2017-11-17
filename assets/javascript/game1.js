@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
     //////////////create vars for pokemons and other stuff
-    var pikachu = ["1", 120, 8, 8];
-    var bulba = ["1", 100, 5, 5];
-    var charmander = ["1", 150, 20, 20];
-    var squirtle = ["1", 180, 25, 25];
+    var pikachu = ["1", 120, 13, 13];
+    var bulba = ["1", 100, 24, 24];
+    var charmander = ["1", 140, 30, 30];
+    var squirtle = ["1", 160, 26, 26];
     var choosenPokemon = false;
     var opponent = false;
     var pokemonSong = document.getElementById("pokemon-song");
@@ -128,9 +128,7 @@ $(document).ready(function () {
 
     ///......................................................pikachu vs ************************
     $("#fight-botton").on("click", function fightArena(){
-        console.log("Clicked");
-        console.log("Pika: "+pikachu[0]);
-        console.log("Bilba: "+bulba[0]);
+
         if(pikachu[0] === "2" && bulba[0] === "3"){
             pikachu[1] -= bulba[2];
             bulba[1]-=pikachu[2];
@@ -188,6 +186,204 @@ $(document).ready(function () {
             else if(squirtle[1] <= 0){
                 squirtle[0] = 4;
                 $("#squirtle-right").css("display", "none");
+                console.log("Bulba lost")
+                $("#pokemonsArena").css("display", "none");
+                $(".pokemon-row").css("display", "block");
+                opponent = false;
+                console.log(opponent);
+                $("#choose_pokemon").attr("src", "assets/media/choose_enemy.png");
+                chooseEnemy()
+            }
+        }
+        ///////////////////////////////////////////////////Bulba vs***************************************
+        if(bulba[0] === "2" && pikachu[0] === "3"){
+            bulba[1] -= pikachu[2];
+            pikachu[1]-=bulba[2];
+            bulba[2] += bulba[3];
+            $(".pikaHP").html("HP: " + pikachu[1]);
+            $(".bulbaHP").html("HP: " + bulba[1]);
+            if(bulba[1] <= 0){
+                console.log("Bulba Lost");
+                $("#bulba-left").css("display", "none");
+            }
+            else if(pikachu[1] <= 0){
+                pikachu[0] = 4;
+                $("#pikachu-right").css("display", "none");
+                console.log("Pikachu lost")
+                $("#pokemonsArena").css("display", "none");
+                $(".pokemon-row").css("display", "block");
+                opponent = false;
+                $("#choose_pokemon").attr("src", "assets/media/choose_enemy.png");
+                chooseEnemy()
+            }       
+        }
+        if(bulba[0] === "2" && charmander[0] === "3"){
+            bulba[1] -= charmander[2];
+            charmander[1]-=bulba[2];
+            bulba[2] += bulba[3];
+            $(".bulbaHP").html("HP: " + bulba[1]);
+            $(".charmanderHP").html("HP: " + charmander[1]);
+            if(bulba[1] <= 0){
+                console.log("bulba Lost");
+                $("#bulba-left").css("display", "none");
+            }
+            else if(charmander[1] <= 0){
+                charmander[0] = 4;
+                $("#charmander-right").css("display", "none");
+                console.log("Bulba lost")
+                $("#pokemonsArena").css("display", "none");
+                $(".pokemon-row").css("display", "block");
+                opponent = false;
+                console.log(opponent);
+                $("#choose_pokemon").attr("src", "assets/media/choose_enemy.png");
+                chooseEnemy()
+            }
+        }
+        if(bulba[0] === "2" && squirtle[0] === "3"){
+            bulba[1] -= squirtle[2];
+            squirtle[1]-=bulba[2];
+            bulba[2] += bulba[3];
+            $(".bulbaHP").html("HP: " + bulba[1]);
+            $(".squirtleHP").html("HP: " + squirtle[1]);
+            if(bulba[1] <= 0){
+                console.log("Bulba Lost");
+                $("#bulba-left").css("display", "none");
+            }
+            else if(squirtle[1] <= 0){
+                squirtle[0] = 4;
+                $("#squirtle-right").css("display", "none");
+                console.log("Squirtle lost")
+                $("#pokemonsArena").css("display", "none");
+                $(".pokemon-row").css("display", "block");
+                opponent = false;
+                console.log(opponent);
+                $("#choose_pokemon").attr("src", "assets/media/choose_enemy.png");
+                chooseEnemy()
+            }
+        }
+        /////////////////////////////////////////////// Charmander vs***************
+        if(charmander[0] === "2" && pikachu[0] === "3"){
+            charmander[1] -= pikachu[2];
+            pikachu[1]-=charmander[2];
+            charmander[2] += charmander[3];
+            $(".pikaHP").html("HP: " + pikachu[1]);
+            $(".charmanderHP").html("HP: " + charmander[1]);
+            if(charmander[1] <= 0){
+                console.log("Charmander Lost");
+                $("#charmander-left").css("display", "none");
+            }
+            else if(pikachu[1] <= 0){
+                pikachu[0] = 4;
+                $("#pikachu-right").css("display", "none");
+                console.log("Pikachu lost")
+                $("#pokemonsArena").css("display", "none");
+                $(".pokemon-row").css("display", "block");
+                opponent = false;
+                $("#choose_pokemon").attr("src", "assets/media/choose_enemy.png");
+                chooseEnemy()
+            }       
+        }
+        if(charmander[0] === "2" && bulba[0] === "3"){
+            charmander[1] -= bulba[2];
+            bulba[1]-=charmander[2];
+            charmander[2] += charmander[3];
+            $(".bulbaHP").html("HP: " + bulba[1]);
+            $(".charmanderHP").html("HP: " + charmander[1]);
+            if(charmander[1] <= 0){
+                console.log("charmander Lost");
+                $("#charmander-left").css("display", "none");
+            }
+            else if(bulba[1] <= 0){
+                bulba[0] = 4;
+                $("#bulba-right").css("display", "none");
+                console.log("Bulba lost")
+                $("#pokemonsArena").css("display", "none");
+                $(".pokemon-row").css("display", "block");
+                opponent = false;
+                console.log(opponent);
+                $("#choose_pokemon").attr("src", "assets/media/choose_enemy.png");
+                chooseEnemy()
+            }
+        }
+        if(charmander[0] === "2" && squirtle[0] === "3"){
+            charmander[1] -= squirtle[2];
+            squirtle[1]-=charmander[2];
+            charmander[2] += charmander[3];
+            $(".charmanderHP").html("HP: " + charmander[1]);
+            $(".squirtleHP").html("HP: " + squirtle[1]);
+            if(charmander[1] <= 0){
+                console.log("charmander Lost");
+                $("#charmander-left").css("display", "none");
+            }
+            else if(squirtle[1] <= 0){
+                squirtle[0] = 4;
+                $("#squirtle-right").css("display", "none");
+                console.log("Squirtle lost")
+                $("#pokemonsArena").css("display", "none");
+                $(".pokemon-row").css("display", "block");
+                opponent = false;
+                console.log(opponent);
+                $("#choose_pokemon").attr("src", "assets/media/choose_enemy.png");
+                chooseEnemy()
+            }
+        }
+        //////////////////////////////////////////////////  Squirtle vs************************
+        if(squirtle[0] === "2" && pikachu[0] === "3"){
+            squirtle[1] -= pikachu[2];
+            pikachu[1]-=squirtle[2];
+            squirtle[2] += squirtle[3];
+            $(".pikaHP").html("HP: " + pikachu[1]);
+            $(".squirtleHP").html("HP: " + squirtle[1]);
+            if(squirtle[1] <= 0){
+                console.log("squirtle Lost");
+                $("#squirtle-left").css("display", "none");
+            }
+            else if(pikachu[1] <= 0){
+                pikachu[0] = 4;
+                $("#pikachu-right").css("display", "none");
+                console.log("Pikachu lost")
+                $("#pokemonsArena").css("display", "none");
+                $(".pokemon-row").css("display", "block");
+                opponent = false;
+                $("#choose_pokemon").attr("src", "assets/media/choose_enemy.png");
+                chooseEnemy()
+            }       
+        }
+        if(squirtle[0] === "2" && charmander[0] === "3"){
+            squirtle[1] -= charmander[2];
+            charmander[1]-=squirtle[2];
+            squirtle[2] += squirtle[3];
+            $(".squirtleHP").html("HP: " + squirtle[1]);
+            $(".charmanderHP").html("HP: " + charmander[1]);
+            if(squirtle[1] <= 0){
+                console.log("squirtle Lost");
+                $("#squirtle-left").css("display", "none");
+            }
+            else if(charmander[1] <= 0){
+                charmander[0] = 4;
+                $("#charmander-right").css("display", "none");
+                console.log("charmander lost")
+                $("#pokemonsArena").css("display", "none");
+                $(".pokemon-row").css("display", "block");
+                opponent = false;
+                console.log(opponent);
+                $("#choose_pokemon").attr("src", "assets/media/choose_enemy.png");
+                chooseEnemy()
+            }
+        }
+        if(squirtle[0] === "2" && bulba[0] === "3"){
+            squirtle[1] -= bulba[2];
+            bulba[1]-=squirtle[2];
+            squirtle[2] += squirtle[3];
+            $(".bulbaHP").html("HP: " + bulba[1]);
+            $(".squirtleHP").html("HP: " + squirtle[1]);
+            if(squirtle[1] <= 0){
+                console.log("squirtle Lost");
+                $("#squirtle-left").css("display", "none");
+            }
+            else if(bulba[1] <= 0){
+                bulba[0] = 4;
+                $("#bulba-right").css("display", "none");
                 console.log("Bulba lost")
                 $("#pokemonsArena").css("display", "none");
                 $(".pokemon-row").css("display", "block");
