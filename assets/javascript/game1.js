@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
             //////////////create vars for pokemons and other stuff
-            var pikachu = ["1", 235, 13, 13];
-            var bulba = ["1", 160, 24, 24];
-            var charmander = ["1", 140, 30, 30];
-            var squirtle = ["1", 160, 26, 26];
+            var pikachu = ["1", 130, 30, 30];
+            var bulba = ["1", 140, 26, 26];
+            var charmander = ["1", 160, 24, 24];
+            var squirtle = ["1", 235, 13, 13];
             var choosenPokemon = false;
             var opponent = false;
             var pokemonSong = document.getElementById("pokemon-song");
